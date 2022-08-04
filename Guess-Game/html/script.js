@@ -1,8 +1,10 @@
 'use strict';
+
 // CREATE THE HIDDEN NUMBER
 let secretNumber = Math.trunc(Math.random() * 20 + 1);
 let score = 20;
 console.log(secretNumber);
+
 //THE CHECK CLICK EVENT
 document.querySelector('.check').addEventListener('click', function() {
     const guess = Number(document.querySelector('.guess').value);
@@ -37,6 +39,7 @@ document.querySelector('.check').addEventListener('click', function() {
 
     }
 });
+
 // AGAIN BUTTON
 document.querySelector('.again').addEventListener('click', function() {
     score = 20;
@@ -52,8 +55,4 @@ document.querySelector('.again').addEventListener('click', function() {
     //document.querySelector('.number').textContent = secretNumber;
 })
 
-/*console.log(document.querySelector('.message').textContent);
-document.querySelector('.message').textContent = "🎉 Correct number!";
 
-document.querySelector('.guess').value = 11;
-console.log(document.querySelector('.guess').value = 11);*/
