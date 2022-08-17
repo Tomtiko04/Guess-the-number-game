@@ -25,6 +25,10 @@ document.querySelector('.check').addEventListener('click', function() {
         document.querySelector('body').style.backgroundColor = "green";
         document.querySelector('.number').style.width = '30rem';
         document.querySelector('.number').textContent = secretNumber;
+        if (score > highscore) {
+            highscore = score;
+            document.querySelector('.highscore').textContent = highscore;
+        };
     } else if (guess > secretNumber) {
         if (score > 1) {
             document.querySelector('.message').textContent = "📉 Number is too high!";
