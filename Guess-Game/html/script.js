@@ -1,7 +1,7 @@
 'use strict';
 
 const getUserName = prompt('Are you ready to play? please fill in your name').trim();
-
+ocument.querySelector('.user').textContent = 'Welcome ' + getUserName;
 // CREATE THE HIDDEN NUMBER
 let secretNumber = Math.trunc(Math.random() * 20 + 1);
 let score = 20;
