@@ -1,7 +1,7 @@
 'use strict';
 
 const getUserName = prompt('Are you ready to play? please fill in your name').trim();
-ocument.querySelector('.user').textContent = 'Welcome ' + getUserName;
+document.querySelector('.user').textContent = 'Welcome ' + getUserName;
 
 if (!getUserName || getUserName === '.') {
     document.querySelector('.user').textContent = 'You are playing as a Guest';
@@ -11,6 +11,7 @@ console.log(typeof(getUserName));
 // CREATE THE HIDDEN NUMBER
 let secretNumber = Math.trunc(Math.random() * 20 + 1);
 let score = 20;
+let highscore = 0;
 console.log(secretNumber);
 
 //THE CHECK CLICK EVENT
