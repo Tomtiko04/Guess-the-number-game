@@ -14,6 +14,10 @@ let score = 20;
 let highscore = 0;
 console.log(secretNumber);
 
+const displayMessage = function(message) {
+    document.querySelector('.message').textContent = message;
+};
+
 //THE CHECK CLICK EVENT
 document.querySelector('.check').addEventListener('click', function() {
     const guess = Number(document.querySelector('.guess').value);
